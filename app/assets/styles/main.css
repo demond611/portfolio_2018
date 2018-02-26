@@ -1,10 +1,12 @@
-$mainBlue: rgba(26, 28, 89, 1);
-$mainBg: #bababa;
+@import "normalize.css";
+/* imported files do not need .css ending */
+/* normalize.css calls package from node modules folder */
+@import "base/_global";
+@import "modules/_main-content";
+@import "modules/_aside-content";
 
-body {
-	font-family: 'Roboto', sans-serif;
-	color: #333;
-}
+/*$mainBlue: rgba(26, 28, 89, 1);*/
+/*$mainBg: #bababa;*/
 
 
 .background-image {
@@ -13,22 +15,7 @@ body {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: url('../images/the-eleventh-hour-3101625_1920.jpg') top left no-repeat $mainBg;
+	background: url('../images/the-eleventh-hour-3101625_1920.jpg') top left no-repeat #bababa;
 	width: 100%;
 	height: auto;
-}
-
-.site-sidebar {
-	top: 0;
-	bottom: 0;
-	left: 0;
-	position: fixed;
-	overflow: hidden;
-	width: 25%;
-	z-index: 2;
-	background-color: red;
-}
-
-.site-main {
-	margin-left: 25%;
 }

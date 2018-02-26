@@ -1,0 +1,10 @@
+/* GLOBAL STYLES */
+
+* {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #333;
+}
