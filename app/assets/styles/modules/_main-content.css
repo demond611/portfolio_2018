@@ -10,18 +10,46 @@
 		left: 0;
 		right: 0;
 		z-index: 1;
-		background: url('../images/the-eleventh-hour-3101625_1920.jpg') top left no-repeat #bababa;
+		background: url('../images/pexels-photo-584305.jpeg') top left no-repeat #bababa;
 		background-size: cover;
 	}
 
 	&__content {
 		position: relative;
+		padding-left: 110px;
+		padding-top: 250px;
 		margin-left: 25%;
 		max-width: 60%;
+		color: white;
 	}
-	&__header {}
-	&__desc {}
-	&__links {}
+
+	&__header {
+		font-size: 2.5em;
+		font-weight: 500;
+		text-shadow: 1px 1px 2px rgba(0, 0, 0, .4);
+	}
+
+	&__desc {
+		font-size: 1.5em;
+		font-weight: 300;
+		margin-bottom: 6em;
+		text-shadow: 1px 1px 2px rgba(0, 0, 0, .4);
+	}
+
+	&__links {
+		font-size: 1.3em;
+		margin-bottom: 1em;
+		/*animation-name: fadein;
+		animation-duration: 5s;
+		animation-iteration-count: 1;
+		animation-timing-function: linear;
+
+		@keyframes fadein {
+			0%,25% { opacity: 0; }
+			to { opacity: 1; }
+		}*/
+	}
+	
 }
 
 .site-main::before {
@@ -32,7 +60,7 @@
 	right: auto;
 	content: " ";
 	display: block;
-	background: url('../images/the-eleventh-hour-3101625_1920.jpg') top left no-repeat #bababa;
+	background: url('../images/pexels-photo-584305.jpeg') top left no-repeat #bababa;
 	width: 25%;
 	background-size: cover;
 }

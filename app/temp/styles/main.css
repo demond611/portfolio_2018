@@ -354,12 +354,15 @@ template {
 body {
 	font-family: 'Roboto', sans-serif;
 	color: #333;
+	font-size: 1em;
+	font-weight: 200;
 }
 
 /* MAIN CONTENT STYLES */
 
 .site-main {
 	margin-left: 25%;
+	
 }
 
 .site-main__home {
@@ -369,21 +372,45 @@ body {
 		left: 0;
 		right: 0;
 		z-index: 1;
-		background: url('../images/the-eleventh-hour-3101625_1920.jpg') top left no-repeat #bababa;
+		background: url('../images/pexels-photo-584305.jpeg') top left no-repeat #bababa;
 		background-size: cover;
 	}
 
 .site-main__content {
 		position: relative;
+		padding-left: 110px;
+		padding-top: 250px;
 		margin-left: 25%;
 		max-width: 60%;
+		color: white;
 	}
 
-.site-main__header {}
+.site-main__header {
+		font-size: 2.5em;
+		font-weight: 500;
+		text-shadow: 1px 1px 2px rgba(0, 0, 0, .4);
+	}
 
-.site-main__desc {}
+.site-main__desc {
+		font-size: 1.5em;
+		font-weight: 300;
+		margin-bottom: 6em;
+		text-shadow: 1px 1px 2px rgba(0, 0, 0, .4);
+	}
 
-.site-main__links {}
+.site-main__links {
+		font-size: 1.3em;
+		margin-bottom: 1em;
+		/*animation-name: fadein;
+		animation-duration: 5s;
+		animation-iteration-count: 1;
+		animation-timing-function: linear;
+
+		@keyframes fadein {
+			0%,25% { opacity: 0; }
+			to { opacity: 1; }
+		}*/
+	}
 
 .site-main::before {
 	position: fixed;
@@ -393,7 +420,7 @@ body {
 	right: auto;
 	content: " ";
 	display: block;
-	background: url('../images/the-eleventh-hour-3101625_1920.jpg') top left no-repeat #bababa;
+	background: url('../images/pexels-photo-584305.jpeg') top left no-repeat #bababa;
 	width: 25%;
 	background-size: cover;
 }
@@ -409,7 +436,13 @@ body {
 	width: 25%;
 	z-index: 2;
 	color: white;
+
 }
+
+.site-sidebar a {
+		color: inherit;
+		text-decoration: none;
+	}
 
 .site-sidebar__background {
 		top: 0;
@@ -425,34 +458,89 @@ body {
 		text-align: center;
 	}
 
-.site-sidebar__title{
+.site-sidebar__header{
 		text-align: center;
 	}
 
-.site-sidebar__subtitle{
+.site-sidebar__subheader{
 		text-align: center;
 		font-weight: 300;
 	}
 
-.site-sidebar__list{
+.site-sidebar__nav{
+		font-size: smaller;
+		margin-top:75px;
 		color: rgba(255, 255, 255, .5);
 	}
 
+.site-sidebar__nav-list {
+		text-decoration: none;
+		list-style: none;
+		padding-left: 0;
+	}
+
+.site-sidebar__nav-item {
+		display: block;
+		margin-bottom: 1.5em;
+		padding: 5px 0;
+	}
+
+.site-sidebar__nav-item:hover {
+			color: #fff;
+		}
+
+.site-sidebar__nav-item::after {
+			display: none;
+			font-style: normal;
+			font-variant: normal;
+			text-rendering: auto;
+			-webkit-font-smoothing: antialiased;
+		}
+
+.site-sidebar__nav-item:hover::after {
+			content: " \f2b9";
+			font-family: "Font Awesome 5 Free";
+			font-weight: 400;
+			padding-left: 5px;
+		};
+
 .site-sidebar__social{
+		margin-top:75px;
 		color: rgba(255, 255, 255, .5);
 	}
+
+.site-sidebar__social-list {
+		text-decoration: none;
+		list-style: none;
+		padding-left: 0;
+		font-size: 2em;
+	}
+
+.site-sidebar__social-item {
+		display: inline;
+		padding-right: 10px;
+	}
+
+.site-sidebar__social-item:last-child { padding-right: 0; }
+
+.site-sidebar__social-item:hover { color: #fff; }
+
+/* BUTTON STYLES */
+
+.btn {
+	background-color: inherit;
+	color: #333;
+	text-decoration: none;
+	display: inline-block;
+	border: 1px solid #333;
+	padding: .5em 1em;
+	margin-right: .5em;
+	text-transform: uppercase;
+	line-height: 1;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, .3);
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, .4);
+}
 
 /*$mainBlue: rgba(26, 28, 89, 1);*/
 
 /*$mainBg: #bababa;*/
-
-.background-image {
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background: url('../images/the-eleventh-hour-3101625_1920.jpg') top left no-repeat #bababa;
-	width: 100%;
-	height: auto;
-}
