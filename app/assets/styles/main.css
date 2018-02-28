@@ -2,9 +2,9 @@
 /* imported files do not need .css ending */
 /* normalize.css calls package from node modules folder */
 @import "base/_global";
+@import "modules/_btn";
 @import "modules/_main-content";
 @import "modules/_aside-content";
-@import "modules/_btn";
 
 /*$mainBlue: rgba(26, 28, 89, 1);*/
 /*$mainBg: #bababa;*/

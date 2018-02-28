@@ -53,26 +53,28 @@
 	&__nav-item {
 		display: block;
 		margin-bottom: 1.5em;
-		padding: 5px 0;
 
 		&:hover {
 			color: #fff;
 		}
 
-		&::after {
-			display: none;
-			font-style: normal;
-			font-variant: normal;
-			text-rendering: auto;
-			-webkit-font-smoothing: antialiased;
+		a {
+			display: block;
+			padding: 10px 0;
 		}
 
-		&:hover::after {
-			content: " \f2b9";
+		a:hover::after {
+			display: inline-block;
+    		font-style: normal;
+    		font-variant: normal;
+    		text-rendering: auto;
+    		-webkit-font-smoothing: antialiased;
+			content: "\f105";
 			font-family: "Font Awesome 5 Free";
-			font-weight: 400;
+			font-weight: 900;
 			padding-left: 5px;
-		};
+			line-height: 1px;
+		}
 	}
 
 	&__social{

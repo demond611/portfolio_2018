@@ -11,7 +11,8 @@ gulp.task('styles', function(){
 	.pipe( postcss([cssImport, cssvars, nested, autoprefixer]) )
 	.on('error', function(errorInfo){
 		console.log("\nError: "+errorInfo.toString()+"\n");
-		this.emit('end'); // ENDS TASK CALL SUCCESSFULLY ALWAYS
+		// ENDS TASK CALL SUCCESSFULLY ALWAYS
+		this.emit('end');
 	})
 	.pipe( gulp.dest('./app/temp/styles') );
 });
