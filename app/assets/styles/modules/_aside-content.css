@@ -1,14 +1,26 @@
 /* ASIDE CONTENT STYLES */
 
 .site-sidebar {
-	top: 0;
-	bottom: 0;
-	left: 0;
-	position: fixed;
-	overflow: hidden;
-	width: 25%;
+
+	top: auto;
+	bottom: auto;
+	left: auto;
+	right: auto;
+	position: relative;
+	width: auto;
 	z-index: 2;
-	color: white;
+	color: $white;
+
+	@mixin atMedium {
+		top: 0;
+		bottom: 0;
+		left: 0;
+		position: fixed;
+		overflow: hidden;
+		width: 25%;
+		z-index: 2;
+		color: $white;
+	}
 
 	a {
 		color: inherit;
@@ -16,32 +28,74 @@
 	}
 
 	&__background {
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		padding: 40px 35px;
-		position: absolute;
-		background-color: rgba(13, 2, 48, .9);
+
+		padding: 20px;
+		position: relative;
+		background-color: $sideBg;
+		
+		@mixin atMedium {
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			padding: 40px 35px;
+			position: absolute;
+		}
 	}
 
 	&__image{
-		text-align: center;
+
+		display: none;
+
+		@mixin atMedium {
+			display: block;
+			text-align: center;
+		}
+		
 	}
 
 	&__header{
-		text-align: center;
+
+		display: none;
+
+		@mixin atMedium {
+			display: block;
+			text-align: center;
+		}
 	}
 
 	&__subheader{
-		text-align: center;
-		font-weight: 300;
+		
+		display: none;
+
+		@mixin atMedium {
+			display: block;
+			text-align: center;
+			font-weight: 300;
+		}
 	}
 
-	&__nav{
-		font-size: smaller;
-		margin-top:75px;
-		color: rgba(255, 255, 255, .5);
+	&__nav {
+		
+		display: none;
+
+		@mixin atMedium {
+			display: block;
+			font-size: smaller;
+			margin-top: 75px;
+			color: $half_opa_white;
+		}
+	}
+
+	&__mobile {
+		@mixin atMedium {
+			display: none;
+		}
+	}
+
+	&__mobile-nav {
+		text-align: right;
+		color: $half_opa_white;
 	}
 
 	&__nav-list {
@@ -55,7 +109,7 @@
 		margin-bottom: 1.5em;
 
 		&:hover {
-			color: #fff;
+			color: $white;
 		}
 
 		a {
@@ -63,7 +117,8 @@
 			padding: 10px 0;
 		}
 
-		a:hover::after {
+		@mixin atMedium {
+			a:hover::after {
 			display: inline-block;
     		font-style: normal;
     		font-variant: normal;
@@ -75,27 +130,57 @@
 			padding-left: 5px;
 			line-height: 1px;
 		}
+		}
+
 	}
 
-	&__social{
-		margin-top:75px;
-		color: rgba(255, 255, 255, .5);
+	&__social {
+
+		margin-top: 0;
+		color: $half_opa_white;
+
+		@mixin atMedium {
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			position: relative;
+			margin-top: 75px;
+		}
+
 	}
 
 	&__social-list {
+		
 		text-decoration: none;
 		list-style: none;
+		font-size: 1.5em;
 		padding-left: 0;
-		font-size: 2em;
+		margin: 0;
+
+		@mixin atMedium {
+			font-size: 2em;
+		}
 	}
 
 	&__social-item {
 		display: inline;
 		padding-right: 10px;
 
-		&:last-child { padding-right: 0; }
+		&:last-child {
 
-		&:hover { color: #fff; }
+			padding-right: 0;
+			float: right;
+
+			@mixin atMedium {
+				display: none;
+			}
+
+		}
+
+		&:hover {
+			color: $white;
+		}
 	}
 
 }
