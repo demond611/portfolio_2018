@@ -29,7 +29,6 @@
 
 	&__background {
 
-		padding: 20px;
 		position: relative;
 		background-color: $sideBg;
 		
@@ -88,12 +87,16 @@
 	}
 
 	&__mobile {
+
+		border-top: 1px solid $half_opa_white;
+
 		@mixin atMedium {
 			display: none;
 		}
 	}
 
 	&__mobile-nav {
+		padding: 0 20px 10px;
 		text-align: right;
 		color: $half_opa_white;
 	}
@@ -136,6 +139,7 @@
 
 	&__social {
 
+		padding: 20px;
 		margin-top: 0;
 		color: $half_opa_white;
 

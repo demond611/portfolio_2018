@@ -498,7 +498,6 @@ body {
 
 .site-sidebar__background {
 
-		padding: 20px;
 		position: relative;
 		background-color: rgba(13, 2, 48, .9);
 	}
@@ -572,6 +571,11 @@ body {
 	}
 	}
 
+.site-sidebar__mobile {
+
+		border-top: 1px solid rgba(255, 255, 255, .5);
+	}
+
 @media (min-width: 1024px) {
 
 .site-sidebar__mobile {
@@ -580,6 +584,7 @@ body {
 	}
 
 .site-sidebar__mobile-nav {
+		padding: 0 20px 10px;
 		text-align: right;
 		color: rgba(255, 255, 255, .5);
 	}
@@ -622,6 +627,7 @@ body {
 
 .site-sidebar__social {
 
+		padding: 20px;
 		margin-top: 0;
 		color: rgba(255, 255, 255, .5);
 
