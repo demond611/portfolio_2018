@@ -44,11 +44,14 @@
 
 	&__image{
 
-		display: none;
-
+		/*display: none;*/
+		text-align: center;
 		@mixin atMedium {
-			display: block;
-			text-align: center;
+			/*border-radius: 76px;*/
+			/*overflow: hidden;*/
+			/*width: 152px;*/
+			/*height: 197px;*/
+			/*margin: 0 auto;*/
 		}
 		
 	}
@@ -77,10 +80,10 @@
 	&__nav {
 		
 		display: none;
+		text-transform: uppercase;
 
 		@mixin atMedium {
 			display: block;
-			font-size: smaller;
 			margin-top: 75px;
 			color: $half_opa_white;
 		}
@@ -99,6 +102,7 @@
 		padding: 0 20px 10px;
 		text-align: right;
 		color: $half_opa_white;
+		text-transform: uppercase;
 	}
 
 	&__nav-list {
@@ -109,7 +113,8 @@
 
 	&__nav-item {
 		display: block;
-		margin-bottom: 1.5em;
+		margin-bottom: 1em;
+		font-size: .75rem;
 
 		&:hover {
 			color: $white;
@@ -139,7 +144,7 @@
 
 	&__social {
 
-		padding: 20px;
+		padding: 20px 0;
 		margin-top: 0;
 		color: $half_opa_white;
 
@@ -159,11 +164,22 @@
 		text-decoration: none;
 		list-style: none;
 		font-size: 1.5em;
-		padding-left: 0;
+		padding: 0 20px;
 		margin: 0;
 
 		@mixin atMedium {
 			font-size: 2em;
+			padding: 0;
+		}
+	}
+
+	&__social-list-text {
+		display: none;
+
+		@mixin atMedium {
+			display: block;
+			font-size: smaller;
+			text-transform: uppercase;
 		}
 	}
 

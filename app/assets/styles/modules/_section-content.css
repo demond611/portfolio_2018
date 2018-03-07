@@ -1,0 +1,54 @@
+.site-section {
+	margin-left: 25%;
+	
+	&__content {
+		position: relative;
+		padding-left: 2em;
+		padding-right: 20px;
+		margin-left: 0;
+		max-width: 100%;
+
+		@mixin atMedium {
+			position: relative;
+			max-width: 90%;
+		}
+	}
+
+	&__header {
+		font-size: 2em;
+		margin-top: 2em;
+	}
+
+	&__desc {
+		font-size: 1em;
+	}
+
+	&__contact {
+		display: block;
+		line-height: 2;
+
+		dd a {
+			color: $socialLinks;
+			text-decoration: none;
+		}
+
+		dd a:hover {
+			text-decoration: underline;
+		}
+
+		dd a > i {
+			margin-right: 5px;
+		}
+	}
+
+	&__contact-item {
+		float: none;
+
+		@mixin atXSmall {
+			float: left;
+			clear: both;
+			width: 200px;
+		}
+	}
+
+}

@@ -1,5 +1,8 @@
 $sideBg: rgba(13, 2, 48, .9);
 $mainBg: #bababa;
 
+$defaultText: #333;
 $white: #fff;
 $half_opa_white: rgba(255, 255, 255, .5);
+
+$socialLinks : #8D7506;
