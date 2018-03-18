@@ -901,6 +901,20 @@ img {
 		}
 	}
 
+.site-section__group-images img {
+			display: none;
+		}
+
+@media (min-width: 530px) {
+
+.site-section__group-images img {
+				display: block;
+				max-width: 100%;
+				max-height: 569px;
+				margin-bottom: 2em
+		}
+	}
+
 .site-section__contact {
 		display: block;
 		line-height: 2;
@@ -931,6 +945,12 @@ img {
 			width: 200px
 	}
 	}
+
+.mobile-image-view {
+	width: auto;
+	height: auto;
+	margin: 0 auto;
+}
 
 .sy-box {
 	max-width: 80%;

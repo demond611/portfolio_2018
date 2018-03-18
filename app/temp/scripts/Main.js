@@ -10480,6 +10480,7 @@ var MobileMenu = function () {
 
 		this.menu_icon = (0, _jquery2.default)('.menu-icon');
 		this.site_sidebar_mobile = (0, _jquery2.default)('.site-sidebar__mobile');
+		// navbar display fix
 		this.site_sidebar_nav_list = (0, _jquery2.default)('.site-sidebar__nav-list');
 		this.events();
 	}
@@ -10493,6 +10494,7 @@ var MobileMenu = function () {
 		key: 'toggleMenu',
 		value: function toggleMenu() {
 			this.site_sidebar_mobile.toggleClass("site-sidebar__mobile--is-extended");
+			// navbar display fix
 			this.site_sidebar_nav_list.toggleClass("site-sidebar__nav-list--is-extended");
 		}
 	}]);

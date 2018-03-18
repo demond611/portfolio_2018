@@ -131,6 +131,21 @@
 		}
 	}
 
+	&__group-images {
+		
+		img {
+			display: none;
+
+			@mixin atSmall {
+				display: block;
+				max-width: 100%;
+				max-height: 569px;
+				margin-bottom: 2em;
+			}
+		}
+
+	}
+
 	&__contact {
 		display: block;
 		line-height: 2;
@@ -159,6 +174,12 @@
 		}
 	}
 
+}
+
+.mobile-image-view {
+	width: auto;
+	height: auto;
+	margin: 0 auto;
 }
 
 .sy-box {
