@@ -1,6 +1,5 @@
-var $ = require('jquery');
-// using require does not require file ending
-var Person = require('./modules/Person');
+import MobileMenu from './modules/MobileMenu';
+import $ from 'jquery';
 
-var robert = new Person('Robert', 'blue');
-robert.greet();
+
+var mobileMenu = new MobileMenu();

@@ -26,6 +26,12 @@
 
 	&__desc {
 		font-size: 1em;
+
+		span {
+			font-style: italic;
+			font-size: smaller;
+			font-weight: 400;
+		}
 	}
 
 	&__work-content {
@@ -47,13 +53,13 @@
 		}
 	}
 
-	&__work-content-subtitle {
+	/*&__work-content-subtitle {
 		font-size: 1rem;
 
 		@mixin atMedium {
 			font-size: 1.1rem;
 		}
-	}
+	}*/
 
 	&__work-content-desc {
 		margin-top: 20px;

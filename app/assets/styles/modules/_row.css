@@ -6,7 +6,7 @@
 	margin-bottom: 15px;
 
 	@mixin atMedium {
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     }
 
 	[class*='col-'] {
