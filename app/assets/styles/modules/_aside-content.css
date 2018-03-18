@@ -115,6 +115,7 @@
 		display: block;
 		margin-bottom: 1em;
 		font-size: .75rem;
+		font-weight: 300;
 
 		&:hover {
 			color: $white;
@@ -125,21 +126,22 @@
 			padding: 10px 0;
 		}
 
+		/* FONT AWESOME STYLING---DONT CHANGE */
 		@mixin atMedium {
 			a:hover::after {
-			display: inline-block;
-    		font-style: normal;
-    		font-variant: normal;
-    		text-rendering: auto;
-    		-webkit-font-smoothing: antialiased;
-			content: "\f105";
-			font-family: "Font Awesome 5 Free";
-			font-weight: 900;
-			padding-left: 5px;
-			line-height: 1px;
+				display: inline-block;
+	    		font-style: normal;
+	    		font-variant: normal;
+	    		text-rendering: auto;
+	    		-webkit-font-smoothing: antialiased;
+				content: "\f105";
+				font-family: "Font Awesome 5 Free";
+				font-weight: 900;
+				padding-left: 5px;
+				line-height: 1px;
+			}
 		}
-		}
-
+		/* FONT AWESOME STYLING---DONT CHANGE */
 	}
 
 	&__social {

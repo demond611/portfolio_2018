@@ -1,0 +1,25 @@
+.row {
+
+	@mixin clearfix;
+
+	width: 100%;
+	margin-bottom: 15px;
+
+	@mixin atMedium {
+        margin-bottom: 30px;
+    }
+
+	[class*='col-'] {
+        float: left;
+        min-height: 1px;
+    }
+
+	&__col-6 {
+		width: 100%;
+
+		@mixin atMedium {
+            width: 50%;
+        }
+	}
+
+}

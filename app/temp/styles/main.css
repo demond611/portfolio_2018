@@ -345,6 +345,14 @@ template {
 
 /* normalize.css calls package from node modules folder */
 
+/* MAIN SECTIONS COLORS */
+
+/* TEXT COLORS */
+
+/* SOCIAL LINK COLORS */
+
+/* BUTTON COLORS */
+
 /* GLOBAL STYLES */
 
 * {
@@ -354,7 +362,7 @@ template {
 body {
 	font-family: 'Roboto', 'Helvetica', sans-serif;
 	font-size: 1rem;
-	font-weight: 200;
+	font-weight: 300;
 	color: #333;
 }
 
@@ -616,7 +624,8 @@ img {
 		display: block;
 		margin-bottom: 1em;
 		font-size: .75rem;
-
+		font-weight: 300;
+		/* FONT AWESOME STYLING---DONT CHANGE */
 	}
 
 .site-sidebar__nav-item:hover {
@@ -628,19 +637,21 @@ img {
 			padding: 10px 0;
 		}
 
+/* FONT AWESOME STYLING---DONT CHANGE */
+
 @media (min-width: 1024px) {
 			.site-sidebar__nav-item a:hover::after {
-			display: inline-block;
-    		font-style: normal;
-    		font-variant: normal;
-    		text-rendering: auto;
-    		-webkit-font-smoothing: antialiased;
-			content: "\f105";
-			font-family: "Font Awesome 5 Free";
-			font-weight: 900;
-			padding-left: 5px;
-			line-height: 1px;
-		}
+				display: inline-block;
+	    		font-style: normal;
+	    		font-variant: normal;
+	    		text-rendering: auto;
+	    		-webkit-font-smoothing: antialiased;
+				content: "\f105";
+				font-family: "Font Awesome 5 Free";
+				font-weight: 900;
+				padding-left: 5px;
+				line-height: 1px;
+			}
 	}
 
 .site-sidebar__social {
@@ -740,12 +751,104 @@ img {
 	}
 
 .site-section__header {
-		font-size: 2em;
-		margin-top: 2em;
+		font-size: 1.5em;
+		margin-top: 1em;
+	}
+
+@media (min-width: 1024px) {
+
+.site-section__header {
+			font-size: 2em;
+			margin-top: 2em
+	}
 	}
 
 .site-section__desc {
 		font-size: 1em;
+	}
+
+.site-section__work-content {
+		overflow: hidden;
+		margin-top: 20px;
+	}
+
+@media (min-width: 1024px) {
+
+.site-section__work-content {
+			margin-top: 40px
+	}
+	}
+
+.site-section__work-content-title {
+		font-size: 1.2em;
+		margin-top: 0;
+	}
+
+@media (min-width: 1024px) {
+
+.site-section__work-content-title {
+			font-size: 1.5em;
+			margin-top: 0
+	}
+	}
+
+.site-section__work-content-subtitle {
+		font-size: 1rem;
+	}
+
+@media (min-width: 1024px) {
+
+.site-section__work-content-subtitle {
+			font-size: 1.1rem
+	}
+	}
+
+.site-section__work-content-desc {
+		margin-top: 20px;
+	}
+
+.site-section__work-button {
+		margin-top: 20px;
+	}
+
+.site-section__work-technologies {
+		margin-top: 20px;
+	}
+
+.site-section__tech-header {
+		font-size: small;
+		text-transform: uppercase;
+	}
+
+.site-section__tech-list {
+		padding-top: 10px;
+	}
+
+.site-section__tech-list ul {
+			margin: 0;
+			padding-left: 0;
+			list-style-type: none;
+		}
+
+.site-section__tech-list li {
+			display: inline-block;
+			overflow: hidden;
+			padding: 4px 7px;
+			color: #fff;
+			background-color: rgba(13, 2, 48, .6);
+		}
+
+.site-section__work-content-image {
+		padding-left: 0;
+		margin: 20px 0;
+	}
+
+@media (min-width: 1024px) {
+
+.site-section__work-content-image {
+			float: left;
+			padding-left: 30px
+	}
 	}
 
 .site-section__contact {
@@ -783,3 +886,40 @@ img {
 	max-width: 80%;
 	margin: 0 auto;
 }
+
+.row {
+
+	width: 100%;
+	margin-bottom: 15px;
+
+}
+
+.row::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+
+@media (min-width: 1024px) {
+
+.row {
+        margin-bottom: 30px
+
+}
+	}
+
+.row [class*='col-'] {
+        float: left;
+        min-height: 1px;
+    }
+
+.row__col-6 {
+		width: 100%;
+	}
+
+@media (min-width: 1024px) {
+
+.row__col-6 {
+            width: 50%
+	}
+	}

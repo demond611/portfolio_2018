@@ -15,12 +15,89 @@
 	}
 
 	&__header {
-		font-size: 2em;
-		margin-top: 2em;
+		font-size: 1.5em;
+		margin-top: 1em;
+
+		@mixin atMedium {
+			font-size: 2em;
+			margin-top: 2em;
+		}
 	}
 
 	&__desc {
 		font-size: 1em;
+	}
+
+	&__work-content {
+		overflow: hidden;
+		margin-top: 20px;
+
+		@mixin atMedium {
+			margin-top: 40px;
+		}
+	}
+
+	&__work-content-title {
+		font-size: 1.2em;
+		margin-top: 0;
+
+		@mixin atMedium {
+			font-size: 1.5em;
+			margin-top: 0;
+		}
+	}
+
+	&__work-content-subtitle {
+		font-size: 1rem;
+
+		@mixin atMedium {
+			font-size: 1.1rem;
+		}
+	}
+
+	&__work-content-desc {
+		margin-top: 20px;
+	}
+
+	&__work-button {
+		margin-top: 20px;
+	}
+
+	&__work-technologies {
+		margin-top: 20px;
+	}
+
+	&__tech-header {
+		font-size: small;
+		text-transform: uppercase;
+	}
+
+	&__tech-list {
+		padding-top: 10px;
+
+		ul {
+			margin: 0;
+			padding-left: 0;
+			list-style-type: none;
+		}
+
+		li {
+			display: inline-block;
+			overflow: hidden;
+			padding: 4px 7px;
+			color: $white;
+			background-color: $techListBtn;
+		}
+	}
+
+	&__work-content-image {
+		padding-left: 0;
+		margin: 20px 0;
+
+		@mixin atMedium {
+			float: left;
+			padding-left: 30px;
+		}
 	}
 
 	&__contact {

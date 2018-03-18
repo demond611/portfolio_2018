@@ -1,8 +1,17 @@
+/* MAIN SECTIONS COLORS */
 $sideBg: rgba(13, 2, 48, .9);
 $mainBg: #bababa;
 
+
+/* TEXT COLORS */
 $defaultText: #333;
 $white: #fff;
 $half_opa_white: rgba(255, 255, 255, .5);
 
+
+/* SOCIAL LINK COLORS */
 $socialLinks : #8D7506;
+
+
+/* BUTTON COLORS */
+$techListBtn: rgba(13, 2, 48, .6);
