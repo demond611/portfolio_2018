@@ -1,6 +1,7 @@
 /* MAIN SECTIONS COLORS */
 $sideBg: rgba(13, 2, 48, .9);
-$mainBg: #bababa;
+$mainBg: #eee;
+$techTag: rgba(13, 2, 48, 1);
 
 
 /* TEXT COLORS */
@@ -8,6 +9,9 @@ $defaultText: #333;
 $white: #fff;
 $half_opa_white: rgba(255, 255, 255, .5);
 $socialLinks: #8D7506;
+$high-skill: #8fbc8f;
+$average-skill: gold;
+$low-skill: #cd5c5c;
 
 
 /* BUTTON COLORS */

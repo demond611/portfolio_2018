@@ -26,12 +26,6 @@
 
 	&__desc {
 		font-size: 1em;
-
-		span {
-			font-style: italic;
-			font-size: smaller;
-			font-weight: 400;
-		}
 	}
 
 	&__work-content {
@@ -53,13 +47,15 @@
 		}
 	}
 
-	/*&__work-content-subtitle {
+	&__work-content-subtitle {
 		font-size: 1rem;
+		margin-bottom: 10px;
 
 		@mixin atMedium {
 			font-size: 1.1rem;
+			margin-bottom: 20px;
 		}
-	}*/
+	}
 
 	&__work-content-desc {
 		margin-top: 20px;
@@ -174,6 +170,121 @@
 		}
 	}
 
+	&__resume {
+		margin-bottom: 30px;
+	}
+
+	&__resume-title {
+		font-size: 1.3em;
+		font-weight: 400;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+
+	&__resume-subtitle {
+		font-size: 1.1em;
+	}
+
+	&__resume-desc {
+
+		p {
+			margin-top: 0;
+			margin-bottom: 3px;
+		}
+
+		li {
+			margin-bottom: 7px;
+		}
+
+		.school {
+			font-weight: 400;
+			color: $socialLinks;
+		}
+
+	}
+
+}
+
+.tech-grid {
+	margin: 0 auto;
+	padding: 0;
+	list-style-type: none;
+	max-width: 80%;
+
+	&__bar {
+		font-size: smaller;
+		font-weight: 400;
+		line-height: 2;
+		color: $white;
+		text-transform: uppercase;
+		background-color: $high-skill;
+		margin-bottom: 5px;
+
+		@mixin atXSmall {
+			background-color: $mainBg;
+		}
+	}
+
+	.fill {
+		display: inline-block;
+
+		&--high {
+			background-color: $high-skill;
+		}
+
+		&--90w {
+			width: 0; 
+		}
+
+		@mixin atXSmall {
+			display: inline-block;
+
+			&--80w { width: 85%; }
+			&--70w { width: 75%; }
+			&--65w { width: 70%; }
+			&--60w { width: 65%; }
+			&--50w { width: 50%; }
+			&--30w { width: 40%; }
+		}
+	}
+
+	.skill-tag {
+		padding-left: 10px;
+		width: 0;
+		background-color: inherit;
+
+		@mixin atXSmall {
+			padding-left: 0;
+			width: 110px;
+			background-color: $techTag;
+			text-align: center;
+			font-weight: 400;
+			display: inline-block;
+		}
+	}
+
+	.skill-amount {
+		float: right;
+		clear: both;
+		margin-right: 5px;
+		color: $white;
+
+		@mixin atXSmall {
+			color: $defaultText;
+		}
+	}
+}
+
+.notice {
+	font-style: italic;
+	font-size: smaller;
+	font-weight: 400;
+}
+
+.resume {
+	text-decoration: underline;
+	font-weight: 500;
+	color: $socialLinks;
 }
 
 .mobile-image-view {
@@ -184,5 +295,8 @@
 
 .sy-box {
 	max-width: 80%;
-	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 20px;
 }

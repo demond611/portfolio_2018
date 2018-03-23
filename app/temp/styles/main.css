@@ -447,14 +447,19 @@ img {
 .site-main__links {
 		font-size: 1.3em;
 		margin-bottom: 1em;
-		/*animation-name: fadein;
-		animation-duration: 5s;
-		animation-iteration-count: 1;
-		animation-timing-function: linear;
 
+		-webkit-animation-name: fadein 5s;
+
+		        animation-name: fadein 5s;
+		/*animation-iteration-count: 1;
+		animation-timing-function: linear;
 		@keyframes fadein {
-			0%,25% { opacity: 0; }
-			to { opacity: 1; }
+			from {
+				opacity: 0;
+			}
+			to {
+				opacity: 1;
+			}
 		}*/
 	}
 
@@ -786,12 +791,6 @@ img {
 		font-size: 1em;
 	}
 
-.site-section__desc span {
-			font-style: italic;
-			font-size: smaller;
-			font-weight: 400;
-		}
-
 .site-section__work-content {
 		overflow: hidden;
 		margin-top: 20px;
@@ -817,13 +816,18 @@ img {
 	}
 	}
 
-/*&__work-content-subtitle {
+.site-section__work-content-subtitle {
 		font-size: 1rem;
+		margin-bottom: 10px;
+	}
 
-		@mixin atMedium {
+@media (min-width: 1024px) {
+
+.site-section__work-content-subtitle {
 			font-size: 1.1rem;
-		}
-	}*/
+			margin-bottom: 20px
+	}
+	}
 
 .site-section__work-content-desc {
 		margin-top: 20px;
@@ -946,6 +950,129 @@ img {
 	}
 	}
 
+.site-section__resume {
+		margin-bottom: 30px;
+	}
+
+.site-section__resume-title {
+		font-size: 1.3em;
+		font-weight: 400;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+
+.site-section__resume-subtitle {
+		font-size: 1.1em;
+	}
+
+.site-section__resume-desc p {
+			margin-top: 0;
+			margin-bottom: 3px;
+		}
+
+.site-section__resume-desc li {
+			margin-bottom: 7px;
+		}
+
+.site-section__resume-desc .school {
+			font-weight: 400;
+			color: #8D7506;
+		}
+
+.tech-grid {
+	margin: 0 auto;
+	padding: 0;
+	list-style-type: none;
+	max-width: 80%;
+}
+
+.tech-grid__bar {
+		font-size: smaller;
+		font-weight: 400;
+		line-height: 2;
+		color: #fff;
+		text-transform: uppercase;
+		background-color: #8fbc8f;
+		margin-bottom: 5px;
+	}
+
+@media (min-width: 460px){
+
+.tech-grid__bar {
+			background-color: #eee
+	}
+	}
+
+.tech-grid .fill {
+		display: inline-block;
+	}
+
+.tech-grid .fill--high {
+			background-color: #8fbc8f;
+		}
+
+.tech-grid .fill--90w {
+			width: 0; 
+		}
+
+@media (min-width: 460px){
+
+.tech-grid .fill {
+			display: inline-block
+	}
+
+			.tech-grid .fill--80w { width: 85%; }
+			.tech-grid .fill--70w { width: 75%; }
+			.tech-grid .fill--65w { width: 70%; }
+			.tech-grid .fill--60w { width: 65%; }
+			.tech-grid .fill--50w { width: 50%; }
+			.tech-grid .fill--30w { width: 40%; }
+	}
+
+.tech-grid .skill-tag {
+		padding-left: 10px;
+		width: 0;
+		background-color: inherit;
+	}
+
+@media (min-width: 460px){
+
+.tech-grid .skill-tag {
+			padding-left: 0;
+			width: 110px;
+			background-color: rgba(13, 2, 48, 1);
+			text-align: center;
+			font-weight: 400;
+			display: inline-block
+	}
+	}
+
+.tech-grid .skill-amount {
+		float: right;
+		clear: both;
+		margin-right: 5px;
+		color: #fff;
+	}
+
+@media (min-width: 460px){
+
+.tech-grid .skill-amount {
+			color: #333
+	}
+	}
+
+.notice {
+	font-style: italic;
+	font-size: smaller;
+	font-weight: 400;
+}
+
+.resume {
+	text-decoration: underline;
+	font-weight: 500;
+	color: #8D7506;
+}
+
 .mobile-image-view {
 	width: auto;
 	height: auto;
@@ -954,7 +1081,10 @@ img {
 
 .sy-box {
 	max-width: 80%;
-	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 20px;
 }
 
 .row {
