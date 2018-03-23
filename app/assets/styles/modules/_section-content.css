@@ -10,7 +10,7 @@
 
 		@mixin atMedium {
 			position: relative;
-			max-width: 90%;
+			max-width: 800px;
 		}
 	}
 
@@ -80,6 +80,16 @@
 
 	&__work-technologies {
 		margin-top: 20px;
+	}
+
+	&__work-technologies-page {
+		margin-top: 20px;
+		padding-left: 0;
+
+		@mixin atMedium {
+			padding-left: 20px;
+			border-left: 1.2px solid $techBorder;
+		}
 	}
 
 	&__tech-header {
@@ -205,76 +215,6 @@
 
 }
 
-.tech-grid {
-	margin: 0 auto;
-	padding: 0;
-	list-style-type: none;
-	max-width: 80%;
-
-	&__bar {
-		font-size: smaller;
-		font-weight: 400;
-		line-height: 2;
-		color: $white;
-		text-transform: uppercase;
-		background-color: $high-skill;
-		margin-bottom: 5px;
-
-		@mixin atXSmall {
-			background-color: $mainBg;
-		}
-	}
-
-	.fill {
-		display: inline-block;
-
-		&--high {
-			background-color: $high-skill;
-		}
-
-		&--90w {
-			width: 0; 
-		}
-
-		@mixin atXSmall {
-			display: inline-block;
-
-			&--80w { width: 85%; }
-			&--70w { width: 75%; }
-			&--65w { width: 70%; }
-			&--60w { width: 65%; }
-			&--50w { width: 50%; }
-			&--30w { width: 40%; }
-		}
-	}
-
-	.skill-tag {
-		padding-left: 10px;
-		width: 0;
-		background-color: inherit;
-
-		@mixin atXSmall {
-			padding-left: 0;
-			width: 110px;
-			background-color: $techTag;
-			text-align: center;
-			font-weight: 400;
-			display: inline-block;
-		}
-	}
-
-	.skill-amount {
-		float: right;
-		clear: both;
-		margin-right: 5px;
-		color: $white;
-
-		@mixin atXSmall {
-			color: $defaultText;
-		}
-	}
-}
-
 .notice {
 	font-style: italic;
 	font-size: smaller;
@@ -291,12 +231,4 @@
 	width: auto;
 	height: auto;
 	margin: 0 auto;
-}
-
-.sy-box {
-	max-width: 80%;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 0;
-	margin-bottom: 20px;
 }

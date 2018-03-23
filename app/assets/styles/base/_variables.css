@@ -17,3 +17,7 @@ $low-skill: #cd5c5c;
 /* BUTTON COLORS */
 $techListBtn: rgba(13, 2, 48, .6);
 $detailsBtn: #8D7506;
+
+
+/* BORDER COLORS */
+$techBorder: #eee;

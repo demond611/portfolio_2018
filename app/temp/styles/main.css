@@ -351,6 +351,8 @@ template {
 
 /* BUTTON COLORS */
 
+/* BORDER COLORS */
+
 /* GLOBAL STYLES */
 
 * {
@@ -770,7 +772,7 @@ img {
 
 .site-section__content {
 			position: relative;
-			max-width: 90%
+			max-width: 800px
 	}
 	}
 
@@ -852,6 +854,19 @@ img {
 
 .site-section__work-technologies {
 		margin-top: 20px;
+	}
+
+.site-section__work-technologies-page {
+		margin-top: 20px;
+		padding-left: 0;
+	}
+
+@media (min-width: 1024px) {
+
+.site-section__work-technologies-page {
+			padding-left: 20px;
+			border-left: 1.2px solid #eee
+	}
 	}
 
 .site-section__tech-header {
@@ -979,6 +994,96 @@ img {
 			color: #8D7506;
 		}
 
+.notice {
+	font-style: italic;
+	font-size: smaller;
+	font-weight: 400;
+}
+
+.resume {
+	text-decoration: underline;
+	font-weight: 500;
+	color: #8D7506;
+}
+
+.mobile-image-view {
+	width: auto;
+	height: auto;
+	margin: 0 auto;
+}
+
+.row {
+
+	width: 100%;
+	margin-bottom: 15px;
+
+}
+
+.row::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+
+@media (min-width: 1024px) {
+
+.row {
+        margin-bottom: 50px
+
+}
+	}
+
+.row [class*='col-'] {
+        float: left;
+        min-height: 1px;
+    }
+
+.row__col-6 {
+		width: 100%;
+	}
+
+@media (min-width: 1024px) {
+
+.row__col-6 {
+            width: 50%
+	}
+	}
+
+.sy-box {
+	max-width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.sy-box.sy-loading {
+  background: url("/assets/images/sy-loader.gif") 50% 50% no-repeat;
+  background-size: 32px;
+  min-height: 40px;
+}
+
+.sy-controls li a:after {
+    content: "";
+    background-image: url("/assets/images/arrows.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    text-indent: 0;
+    line-height: 2.8em;
+    color: #111;
+    font-weight: 800;
+    position: absolute;
+    background-color: #fff;
+    width: 2.8em;
+    height: 2.8em;
+    left: 50%;
+    top: 50%;
+    margin-top: -1.4em;
+    margin-left: -1.4em;
+    border-radius: 50%;
+}
+
 .tech-grid {
 	margin: 0 auto;
 	padding: 0;
@@ -1058,68 +1163,5 @@ img {
 
 .tech-grid .skill-amount {
 			color: #333
-	}
-	}
-
-.notice {
-	font-style: italic;
-	font-size: smaller;
-	font-weight: 400;
-}
-
-.resume {
-	text-decoration: underline;
-	font-weight: 500;
-	color: #8D7506;
-}
-
-.mobile-image-view {
-	width: auto;
-	height: auto;
-	margin: 0 auto;
-}
-
-.sy-box {
-	max-width: 80%;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 0;
-	margin-bottom: 20px;
-}
-
-.row {
-
-	width: 100%;
-	margin-bottom: 15px;
-
-}
-
-.row::after {
-		content: "";
-		clear: both;
-		display: table;
-	}
-
-@media (min-width: 1024px) {
-
-.row {
-        margin-bottom: 50px
-
-}
-	}
-
-.row [class*='col-'] {
-        float: left;
-        min-height: 1px;
-    }
-
-.row__col-6 {
-		width: 100%;
-	}
-
-@media (min-width: 1024px) {
-
-.row__col-6 {
-            width: 50%
 	}
 	}

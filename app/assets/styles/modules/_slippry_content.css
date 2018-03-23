@@ -1,0 +1,36 @@
+.sy-box {
+	max-width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.sy-box.sy-loading {
+  background: url("/assets/images/sy-loader.gif") 50% 50% no-repeat;
+  -webkit-background-size: 32px 32px;
+          background-size: 32px;
+  min-height: 40px;
+}
+
+.sy-controls li a:after {
+    content: "";
+    background-image: url("/assets/images/arrows.svg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+            background-size: cover;
+    text-align: center;
+    text-indent: 0;
+    line-height: 2.8em;
+    color: #111;
+    font-weight: 800;
+    position: absolute;
+    background-color: #fff;
+    width: 2.8em;
+    height: 2.8em;
+    left: 50%;
+    top: 50%;
+    margin-top: -1.4em;
+    margin-left: -1.4em;
+    border-radius: 50%;
+}
