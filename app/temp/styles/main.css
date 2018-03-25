@@ -433,17 +433,19 @@ img {
 	}
 	}
 
+.site-main--text-shadow-4 {
+		text-shadow: 1px 1px 4px rgba(0, 0, 0, .4);
+	}
+
 .site-main__header {
 		font-size: 2.5em;
 		font-weight: 500;
-		text-shadow: 1px 1px 2px rgba(0, 0, 0, .4);
 	}
 
 .site-main__desc {
 		font-size: 1.5em;
 		font-weight: 300;
 		margin-bottom: 6em;
-		text-shadow: 1px 1px 2px rgba(0, 0, 0, .4);
 	}
 
 .site-main__home-links {
