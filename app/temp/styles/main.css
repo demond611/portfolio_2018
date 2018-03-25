@@ -446,23 +446,9 @@ img {
 		text-shadow: 1px 1px 2px rgba(0, 0, 0, .4);
 	}
 
-.site-main__links {
+.site-main__home-links {
 		font-size: 1.3em;
 		margin-bottom: 1em;
-
-		-webkit-animation-name: fadein 5s;
-
-		        animation-name: fadein 5s;
-		/*animation-iteration-count: 1;
-		animation-timing-function: linear;
-		@keyframes fadein {
-			from {
-				opacity: 0;
-			}
-			to {
-				opacity: 1;
-			}
-		}*/
 	}
 
 .site-main::before {
@@ -484,6 +470,29 @@ img {
 		width: 25%
 }
 	}
+
+/* ANIMATIONS */
+
+.site-main__home-links {
+	-webkit-animation-name: fadein;
+	        animation-name: fadein;
+	-webkit-animation-duration: 3s;
+	        animation-duration: 3s;
+	-webkit-animation-iteration-count: 1;
+	        animation-iteration-count: 1;
+	-webkit-animation-timing-function: linear;
+	        animation-timing-function: linear;
+}
+
+@-webkit-keyframes fadein {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+@keyframes fadein {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
 
 /* ASIDE CONTENT STYLES */
 
