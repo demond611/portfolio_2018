@@ -77,13 +77,13 @@
 
 
 /* ANIMATIONS */
-.site-main__home-links {
-	animation-name: fadein;
-	animation-duration: 3s;
-	animation-iteration-count: 1;
-	animation-timing-function: linear;
-}
+/* animation: [animation-name] [animation-duration] [animation-timing-function]
+[animation-delay] [animation-iteration-count] [animation-direction]
+[animation-fill-mode] */
 @keyframes fadein {
 	from { opacity: 0; }
 	to { opacity: 1; }
+}
+.site-main__home-links {
+	animation: fadein 2s linear 1;
 }
