@@ -131,8 +131,14 @@
 
 			@mixin atSmall {
 				display: block;
-				max-width: 100%;
+				max-width: 80%;
 				max-height: 569px;
+				margin: 0 auto;
+			}
+
+			@mixin atMedium {
+				display: block;
+				max-width: 100%;
 			}
 		}
 	}

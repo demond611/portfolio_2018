@@ -407,7 +407,7 @@ img {
 		bottom: 0;
 		left: 0;
 		right: 0;
-		background: url('../images/pexels-photo-584305.jpeg') top left no-repeat #bababa;
+		background: url('/assets/images/pexels-photo-584305-min.jpeg') top left no-repeat #bababa;
 		background-size: cover;
 	}
 
@@ -461,7 +461,7 @@ img {
 	right: auto;
 	content: " ";
 	display: block;
-	background: url('../images/pexels-photo-584305.jpeg') top left no-repeat #bababa;
+	background: url('/assets/images/pexels-photo-584305-min.jpeg') top left no-repeat #bababa;
 	width: 0;
 	background-size: cover;
 }
@@ -924,8 +924,17 @@ img {
 
 .site-section__work-content-image img {
 				display: block;
-				max-width: 100%;
-				max-height: 569px
+				max-width: 80%;
+				max-height: 569px;
+				margin: 0 auto
+		}
+	}
+
+@media (min-width: 1024px) {
+
+.site-section__work-content-image img {
+				display: block;
+				max-width: 100%
 		}
 	}
 
