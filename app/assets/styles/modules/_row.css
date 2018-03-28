@@ -3,10 +3,14 @@
 	@mixin clearfix;
 
 	width: 100%;
-	margin-bottom: 15px;
+	&--margin-btm-15-5 {
+		margin-bottom: 15px;
+	}
 
 	@mixin atMedium {
-        margin-bottom: 50px;
+		&--margin-btm-15-5 {
+        	margin-bottom: 5em;
+        }
     }
 
 	[class*='col-'] {
