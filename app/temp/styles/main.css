@@ -1006,6 +1006,35 @@ img {
 			color: #8D7506;
 		}
 
+.site-section__grid-desc {
+		font-size: smaller;
+		font-weight: 500;
+		padding-left: 0;
+		list-style-type: none;
+		color: #fff;
+		max-width: 80%;
+		margin: 0 auto 20px;
+	}
+
+.site-section__grid-desc li {
+			padding: 5px 5px 5px 5px;
+			display: block;
+		}
+
+@media (min-width: 460px){
+
+.site-section__grid-desc li {
+				display: inline-block;
+				margin-right: 10px
+		}
+	}
+
+.site-section--grid-high { background-color: #8fbc8f; }
+
+.site-section--grid-avg { background-color: gold; }
+
+.site-section--grid-low { background-color: #cd5c5c; }
+
 .notice {
 	font-style: italic;
 	font-size: smaller;
@@ -1122,29 +1151,34 @@ img {
 	}
 
 .tech-grid .fill {
-		display: inline-block;
+		display: block;
 	}
 
 .tech-grid .fill--high {
 			background-color: #8fbc8f;
 		}
 
-.tech-grid .fill--90w {
-			width: 0; 
+.tech-grid .fill--avg {
+			background-color: gold;
+		}
+
+.tech-grid .fill--low {
+			background-color: #cd5c5c;
 		}
 
 @media (min-width: 460px){
 
 .tech-grid .fill {
 			display: inline-block
+			/*&--80w { width: 85%; }
+			&--70w { width: 75%; }
+			&--65w { width: 70%; }
+			&--60w { width: 65%; }
+			&--50w { width: 50%; }
+			&--30w { width: 40%; }*/
 	}
 
-			.tech-grid .fill--80w { width: 85%; }
-			.tech-grid .fill--70w { width: 75%; }
-			.tech-grid .fill--65w { width: 70%; }
-			.tech-grid .fill--60w { width: 65%; }
-			.tech-grid .fill--50w { width: 50%; }
-			.tech-grid .fill--30w { width: 40%; }
+			.tech-grid .fill--100w { width: 100%;  }
 	}
 
 .tech-grid .skill-tag {

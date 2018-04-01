@@ -218,8 +218,31 @@
 			font-weight: 400;
 			color: $socialLinks;
 		}
-
 	}
+
+	&__grid-desc {
+		font-size: smaller;
+		font-weight: 500;
+		padding-left: 0;
+		list-style-type: none;
+		color: $white;
+		max-width: 80%;
+		margin: 0 auto 20px;
+
+		li {
+			padding: 5px 5px 5px 5px;
+			display: block;
+
+			@mixin atXSmall {
+				display: inline-block;
+				margin-right: 10px;
+			}
+		}
+	}
+
+	&--grid-high { background-color: $high-skill; }
+	&--grid-avg { background-color: $average-skill; }
+	&--grid-low { background-color: $low-skill; }
 
 }
 

@@ -19,25 +19,30 @@
 	}
 
 	.fill {
-		display: inline-block;
+		display: block;
 
 		&--high {
 			background-color: $high-skill;
 		}
 
-		&--90w {
-			width: 0; 
+		&--avg {
+			background-color: $average-skill;
+		}
+
+		&--low {
+			background-color: $low-skill;
 		}
 
 		@mixin atXSmall {
 			display: inline-block;
 
-			&--80w { width: 85%; }
+			&--100w { width: 100%;  }
+			/*&--80w { width: 85%; }
 			&--70w { width: 75%; }
 			&--65w { width: 70%; }
 			&--60w { width: 65%; }
 			&--50w { width: 50%; }
-			&--30w { width: 40%; }
+			&--30w { width: 40%; }*/
 		}
 	}
 
