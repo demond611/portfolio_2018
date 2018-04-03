@@ -413,7 +413,7 @@ img {
 		position: relative;
 		padding-left: 20px;
 		padding-right: 20px;
-		padding-top: 200px;
+		margin-top: 20px;
 		margin-left: 0;
 		max-width: 100%;
 		color: #fff;
@@ -423,9 +423,9 @@ img {
 
 .site-main__content {
 			position: relative;
-			padding-left: 110px;
+			padding-left: 80px;
 			padding-top: 250px;
-			margin-left: 25%;
+			/*margin-left: 25%;*/
 			max-width: 60%;
 			color: #fff
 	}
