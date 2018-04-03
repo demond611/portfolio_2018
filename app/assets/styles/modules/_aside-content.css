@@ -41,14 +41,28 @@
 		}
 	}
 
-	&__image{
+	&__image {
 
 		border-radius: 50%;
 		overflow: hidden;
 		width: 150px;
 		height: auto;
 		margin: 0 auto;
-		
+		display: block;
+	}
+
+	&__image-home {
+
+		display: none;
+
+		@mixin atMedium {
+			border-radius: 50%;
+			overflow: hidden;
+			width: 150px;
+			height: auto;
+			margin: 0 auto;
+			display: block;
+		}
 	}
 
 	&__header{

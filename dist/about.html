@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width">
-	<title>Robert Walker Web Developer</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <title>About Me - Robert Walker</title>
 
     <meta property="og:title" content="Robert Walker Web Developer">
     <meta property="og:type" content="website">
@@ -13,17 +13,19 @@
     <meta property="og:url" content="">
     <meta property="og:description" content="">
     <meta property="og:image" content="">
-    
-    <!-- build:css /assets/styles/main.css -->
-    <link rel="stylesheet" href="/temp/styles/main.css">
-    <!-- endbuild -->
+
+    <link rel="stylesheet" href="/assets/styles/slippry-4c0cb8633a.css"/>
+
+    <link rel="stylesheet" href="/assets/styles/main-1d92f5654f.css"/>
 
     <link href="//use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500" rel="stylesheet" type="text/css">
 
-    <!-- build:js /assets/scripts/Vendor.js -->
-    <script src="/temp/scripts/Vendor.js"></script>
-    <!-- endbuild -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script src="/assets/scripts/slippry-d9194e619d.min.js"></script>
+
+    <script src="/assets/scripts/Vendor-ba8f4cab74.js"></script>
 
     <!--[if lt IE 9]>
       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -34,10 +36,10 @@
  
     <aside class="site-sidebar">
         <div class="site-sidebar__background">
-            <a href="#">
+            <a href="index.html">
                 <div class="site-sidebar--top-pad-20">
-                    <div class="site-sidebar__image-home">
-                        <img class="lazyload" data-srcset="/assets/images/image-min.jpg" alt="profile image">
+                    <div class="site-sidebar__image">
+                        <img src="/assets/images/image-min.jpg" alt="profile image">
                     </div>
                     <h2 class="site-sidebar__header">Robert Walker</h2>
                     <h3 class="site-sidebar__subheader">Web Developer</h3>
@@ -98,26 +100,39 @@
     </aside>
 
     <section class="site-main">
-        <div class="site-main__home">
-            <div class="site-main__content">
-                <div class="site-main__header site-main--text-shadow-4">
-                    Hi, I'm Robert.
-                </div>
-                <div class="site-main__desc site-main--text-shadow-4">
-                    I am a front-end web developer with a passion for coding.
-                </div>
-                <div class="site-main__home-links">
-                    <a href="work.html" class="btn">Work / Projects</a>
-                </div>
-                <div class="site-main__home-links">
-                    <a href="resume.html" class="btn">Resume</a>
-                </div>
+        <div class="site-section__content">
+            <h1 class="site-section__header">
+                About Me
+            </h1>
+            <div class="site-section__desc">
+                <p>Hello, I'm a web developer currently living in Illinois. At the moment I'm currently using Java for work and learning AngularJS, React and other javascript frameworks for use on personal projects in my spare time. I'm self teaching myself to use these technologies in a production environment eventually.</p>
+                <p>In my free time I enjoy playing fantasy football, traveling and just relaxing. Most of my travels have consisted of cruises, but I plan on expanding on those experiences with trips to various countries in the near future. I have a beagle/jack russell mix named Mike Lowry who loves to just lounge around the house.</p>
+            </div>
+            <div class="sy-box">
+                <ul id="slippry-demo">
+                    <li>
+                        <a href="#slide1"><img src="/assets/images/trip-1-min.jpg" alt="2013 trip to Jamaica"></a>
+                    </li>
+                    <li>
+                        <a href="#slide2"><img src="/assets/images/trip-2-min.jpg" alt="2015 cruise ship koala towel"></a>
+                    </li>
+                    <li>
+                        <a href="#slide3"><img src="/assets/images/trip-3-min.jpg" alt="Painted wall in Mexico"></a>
+                    </li>
+                    <li>
+                        <a href="#slide4"><img src="/assets/images/mike-1-min.jpg" alt="Mike Lowry"></a>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
-	
-    <!-- build:js /assets/scripts/Main.js -->
-    <script src="/temp/scripts/Main.js"></script>
-    <!-- endbuild -->
+    
+    <script src="/assets/scripts/Main-f10cef1631.js"></script>
+    
+    <script>
+        $(function(){
+            jQuery('#slippry-demo').slippry();
+        })
+    </script>
 </body>
 </html>

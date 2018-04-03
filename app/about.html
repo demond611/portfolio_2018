@@ -14,16 +14,26 @@
     <meta property="og:description" content="">
     <meta property="og:image" content="">
 
+    <!-- build:css /assets/styles/slippry.css -->
     <link rel="stylesheet" href="temp/styles/slippry.css" />
+    <!-- endbuild -->
 
+    <!-- build:css /assets/styles/main.css -->
     <link rel="stylesheet" href="/temp/styles/main.css">
+    <!-- endbuild -->
+
     <link href="//use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500" rel="stylesheet" type="text/css">
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="temp/scripts/slippry.min.js"></script>
 
+    <!-- build:js /assets/scripts/slippry.min.js -->
+    <script src="temp/scripts/slippry.min.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js /assets/scripts/Vendor.js -->
     <script src="/temp/scripts/Vendor.js"></script>
+    <!-- endbuild -->
 
     <!--[if lt IE 9]>
       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -109,23 +119,26 @@
             <div class="sy-box">
                 <ul id="slippry-demo">
                     <li>
-                        <a href="#slide1"><img class="lazyload" data-srcset="/assets/images/trip-1-min.jpg" alt="2013 trip to Jamaica"></a>
+                        <a href="#slide1"><img src="/assets/images/trip-1-min.jpg" alt="2013 trip to Jamaica"></a>
                     </li>
                     <li>
-                        <a href="#slide2"><img class="lazyload" data-srcset="/assets/images/trip-2-min.jpg" alt="2015 cruise ship koala towel"></a>
+                        <a href="#slide2"><img src="/assets/images/trip-2-min.jpg" alt="2015 cruise ship koala towel"></a>
                     </li>
                     <li>
-                        <a href="#slide3"><img class="lazyload" data-srcset="/assets/images/trip-3-min.jpg" alt="Painted wall in Mexico"></a>
+                        <a href="#slide3"><img src="/assets/images/trip-3-min.jpg" alt="Painted wall in Mexico"></a>
                     </li>
                     <li>
-                        <a href="#slide4"><img class="lazyload" data-srcset="/assets/images/mike-1-min.jpg" alt="Mike Lowry"></a>
+                        <a href="#slide4"><img src="/assets/images/mike-1-min.jpg" alt="Mike Lowry"></a>
                     </li>
                 </ul>
             </div>
         </div>
     </section>
     
+    <!-- build:js /assets/scripts/Main.js -->
     <script src="/temp/scripts/Main.js"></script>
+    <!-- endbuild -->
+    
     <script>
         $(function(){
             jQuery('#slippry-demo').slippry();
