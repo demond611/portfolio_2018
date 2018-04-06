@@ -366,10 +366,6 @@ body {
 	color: #333;
 }
 
-img {
-	width: 100%;
-}
-
 /* BUTTON STYLES */
 
 .btn {
@@ -499,19 +495,19 @@ img {
 [animation-delay] [animation-iteration-count] [animation-direction]
 [animation-fill-mode] */
 
-@-webkit-keyframes fadein {
+@-webkit-keyframes fadeButtons {
 	from { opacity: 0; }
 	to { opacity: 1; }
 }
 
-@keyframes fadein {
+@keyframes fadeButtons {
 	from { opacity: 0; }
 	to { opacity: 1; }
 }
 
 .site-main__home-links {
-	-webkit-animation: fadein 2s linear 1;
-	        animation: fadein 2s linear 1;
+	-webkit-animation: fadeButtons 2s linear 1;
+	        animation: fadeButtons 2s linear 1;
 }
 
 /* ASIDE CONTENT STYLES */

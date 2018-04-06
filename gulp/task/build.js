@@ -28,13 +28,14 @@ gulp.task('copyGeneralFiles', ['deleteDistFolder'], function(){
 	var pathsToCopy = [
 		'./app/**/*',
 		'!./app/*.html',
+		// '!./app/project/*.html',
 		'!./app/assets/images/**',
 		'!./app/assets/styles/**',
 		'!./app/assets/scripts/**',
 		'!./app/temp/',
 		'!./app/temp/**',
-		'!./app/project/',
-		'!./app/project/**'
+		// '!./app/project/',
+		// '!./app/project/**'
 	];
 
 	return gulp.src(pathsToCopy)
@@ -54,19 +55,16 @@ gulp.task('optimizeImages', ['deleteDistFolder'], function(){
 
 
 // styles/scripts PRODUCE FRESH REBUILDS OF THOSE FILES
-gulp.task('usemin', ['deleteDistFolder', 'styles', 'scripts'], function(){
-	var htmlPages = [
-		'./app/*.html',
-		'./app/project/*.html'
-	];
+gulp.task('usemin1', ['deleteDistFolder', 'styles', 'scripts'], function(){
 
-	return gulp.src(htmlPages)
+	return gulp.src(['./app/**/*.html'])
 	.pipe(usemin({
-		css: [function(){ return rev() }, function(){ return cssnano() }],
+		// reduceIdents: false...NEEDED FOR CSSNANO REMOVING ANIMATION STYLE NAME
+		css: [function(){ return rev() }, function(){ return cssnano( {reduceIdents: false} ) }],
 		js: [function(){ return rev() }, function(){ return uglify() }]
 	}))
 	.pipe(gulp.dest("./dist"));
 });
 
 
-gulp.task('build', ['deleteDistFolder', 'copyGeneralFiles', 'optimizeImages', 'usemin']);
+gulp.task('build', ['deleteDistFolder', 'copyGeneralFiles', 'optimizeImages', 'usemin1']);

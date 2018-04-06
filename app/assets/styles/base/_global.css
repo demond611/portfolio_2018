@@ -10,7 +10,3 @@ body {
 	font-weight: 300;
 	color: $defaultText;
 }
-
-img {
-	width: 100%;
-}
